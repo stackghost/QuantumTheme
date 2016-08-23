@@ -1,0 +1,8 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="thumb">
+    <a href="{{image}}" class="image"><img src="{{image}}" alt="" width="422px" height="264px" /></a>
+    <h2><a href="{{url}}">{{{title}}}</a></h2>
+    <p>{{excerpt words="19"}}&hellip;</p>
+</article>
+{{/foreach}}
